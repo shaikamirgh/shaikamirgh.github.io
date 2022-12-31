@@ -37,6 +37,7 @@ ul li {
 a {
   font-weight: normal;
   text-decoration: none !important;
+  margin-top: 5px !important;
   transition: all 0.4s ease;
 }
 a:hover {
@@ -52,6 +53,8 @@ p {
   font-weight: 300;
   line-height: 1.5;
   color: #5b5b5b;
+  position: relative;
+  top:30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -517,9 +520,9 @@ b, strong {
   }
 }
 @media (max-width: 580px) {
-	.animated-info {
-		min-width: 200px;
-	}
+    .animated-info {
+        min-width: 200px;
+    }
   .animated-item {
     font-size: 30px;
   }
