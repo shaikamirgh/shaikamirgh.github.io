@@ -1,3 +1,7 @@
 # shaikamirgh.github.io
 Amir's website
-yooo
+access it live on amirbe.me
+
+also building amircodes.tech
+any code support appreciated
+
