@@ -8,14 +8,13 @@
 
     <title>Shaik Amir's Portfolio</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/unicons.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/unicons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
     <!-- MAIN STYLE -->
-    <link rel="stylesheet" href="css/tooplate-style.css">
-    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tooplate-style.css') }}">
   </head>
   <body>
 
@@ -79,15 +78,16 @@
                         <p>Building a successful product is a challenge. I am highly energetic in working with teams to develop programs and debug them.</p>
                         
                         <div class="custom-btn-group mt-4">
-                          <a href="res\Shaik_Amir_resume.pdf" download="Shaik_Amir_resume" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
-                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get a free quote</a>
+                          
+                          <a href="{{ url_for('static', filename='res/Shaik_Amir_resume.pdf') }}" download="Shaik_Amir_resume" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>
+                          <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Just Say Salaam!</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-5 col-md-12 col-12">
                     <div class="about-image svg">
-                        <img src="images\undraw\software_engineer_on_desk.jpg" class="img-fluid" alt="svg image">
+                        <img src="{{ url_for('static', filename='images/undraw/software_engineer_on_desk.jpg') }}" class="img-fluid" alt="svg image">
                     </div>
                 </div>
 
@@ -109,31 +109,35 @@
                       <div class="owl-carousel owl-theme">
                         <div class="item">
                           <div class="project-info">
-                            <img src="images\project\imagine_hack.jpg" class="img-fluid" alt="project image">
+                            <!--change to this format-->
+                            <img src="{{ url_for('static', filename='images/project/imagine_hack.jpg') }}" alt="Project Image">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images\project\google_ks_img.jpg" class="img-fluid" alt="project image">
+                            <img src="{{ url_for('static', filename='images/project/google_ks_img.jpg') }}" alt="Project Image">
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images\project\IP_training_img.jpg" class="img-fluid" alt="project image">
+                            <img src="{{ url_for('static', filename='images/project/IP_training_img.jpg') }}" alt="Project Image">
+
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images\project\unfold_img.jpg" class="img-fluid" alt="project image">
+                            <img src="{{ url_for('static', filename='images/project/unfold_img.jpg') }}" alt="Project Image">
+
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="images\project\unity_day.png" class="img-fluid" alt="project image">
+                            <img src="{{ url_for('static', filename='images/project/unity_day.png') }}" alt="Project Image">
+
                           </div>
                         </div>
                       </div>
@@ -153,12 +157,22 @@
 
                     <div class="timeline">
                         <div class="timeline-wrapper">
+                          <div class="timeline-yr">
+                              <span>2023</span>
+                          </div>
+                          <div class="timeline-info">
+                              <h3><span>TSIG DSAI Chair</span><small>TSIG</small></h3>
+                              <p>Speaker at Technical workshops PYWEEK, Generative AI. and Yes, many projects.</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-wrapper">
                              <div class="timeline-yr">
                                   <span>2022</span>
                              </div>
                              <div class="timeline-info">
-                                  <h3><span>DSAI Project Manager</span><small>TSIG</small></h3>
-                                  <p>Speaker at Technical workshops. and Yes, many mini projects on the way !!.</p>
+                                  <h3><span>DSAI Vice Lead</span><small>TSIG</small></h3>
+                                  <p>Speaker at Technical workshops. and Yes, many mini projects !!.</p>
                              </div>
                         </div>
 
@@ -204,8 +218,8 @@
                                   <span>2024</span>
                              </div>
                              <div class="timeline-info">
-                                  <h3><span>B.E</span><small>Muffakham Jah College of Engineering</small></h3>
-                                  <p>Currently 3rd Year undergrad in CSE with excellent performance <a rel="nofollow" href="https://mjcollege.ac.in/">MJCET</a></p>
+                                  <h3><span>Computer Science</span><small>Muffakham Jah College of Engineering</small></h3>
+                                  <p>Currently Final Year undergrad in Bachelor of Engineering CSE with excellent performance <a rel="nofollow" href="https://mjcollege.ac.in/">MJCET</a></p>
                              </div>
                         </div>
 
@@ -254,7 +268,7 @@
                 </div>
 
                 <ul class="social-links">
-                     <li><a href="https://shaikamirgh.github.io" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
+                     <li><a href="https://github.com/shaikamirgh" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
                      <li><a href="https://www.instagram.com/amir_bin_anwar/" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
                      <li><a href="https://www.youtube.com/@shaikamir1429/featured" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
                 </ul>
@@ -265,7 +279,10 @@
             <div class="contact-form">
               <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-              <form action="" method="get">
+              
+
+
+              <form action="{{ url_for('send_message') }}" method="post">
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
@@ -305,14 +322,15 @@
           </div>
      </footer>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
-
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    
+    <!-- similarly change for these -->
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Headroom.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jQuery.headroom.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/smoothscroll.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
   </body>
 </html>
