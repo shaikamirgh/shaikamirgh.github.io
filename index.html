@@ -395,7 +395,7 @@
       <div class="row">
 
         <div class="col-lg-12 col-12">
-          <p class="copyright-text text-center">Copyright &copy; 2022.</p>
+          <p class="copyright-text text-center">Copyright &copy; <span id="year"></span>.</p>
           <p class="copyright-text text-center">By <a rel="nofollow" href="https://github.com/shaikamirgh">Amir</a></p>
         </div>
 
@@ -411,7 +411,10 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/smoothscroll.js"></script>
   <script src="js/custom.js"></script>
-
+  <script>
+    let Year=new Date().getFullYear();
+    document.getElementById('year').textContent=Year;
+  </script>
 </body>
 
 </html>
